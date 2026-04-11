@@ -1,0 +1,76 @@
+name: vybe
+description: Feel Every Frequency — The audiophile music player.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+  flutter: '>=3.19.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  audio_service: ^0.18.15
+
+  # ─── Audio Engine ──────────────────────────────────────────────────────────
+  just_audio: ^0.9.40
+  just_audio_background: ^0.0.1-beta.12
+  audio_session: ^0.1.21
+
+  # ─── Local Library Scanning ────────────────────────────────────────────────
+  on_audio_query: ^2.9.0
+  permission_handler: ^11.3.1
+
+  # ─── State Management ──────────────────────────────────────────────────────
+  flutter_riverpod: ^2.5.1
+
+  # ─── Storage ───────────────────────────────────────────────────────────────
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  shared_preferences: ^2.2.3
+  path_provider: ^2.1.3
+
+  # ─── Networking (lyrics only) ──────────────────────────────────────────────
+  http: ^1.2.1
+  cached_network_image: ^3.4.0
+
+  # ─── Dynamic Theming ───────────────────────────────────────────────────────
+  palette_generator: ^0.3.3+3
+
+  # ─── Utilities ─────────────────────────────────────────────────────────────
+  rxdart: ^0.27.7
+  uuid: ^4.4.0
+  intl: ^0.19.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.11
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/animations/
+    - assets/fonts/
+  fonts:
+    - family: VybeSans
+      fonts:
+        - asset: assets/fonts/PlusJakartaSans-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/PlusJakartaSans-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/PlusJakartaSans-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/PlusJakartaSans-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/PlusJakartaSans-ExtraBold.ttf
+          weight: 800
+    - family: VybeDisplay
+      fonts:
+        - asset: assets/fonts/Syne-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Syne-ExtraBold.ttf
+          weight: 800

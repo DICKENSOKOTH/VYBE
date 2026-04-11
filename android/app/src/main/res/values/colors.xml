@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- android/app/src/main/res/values/colors.xml -->
+<resources>
+    <!-- VYBE deep space background — matches VybeColors.background (#080810) -->
+    <color name="launch_background">#FF080810</color>
+    <color name="vybe_pink">#FFFF1B6B</color>
+</resources>
